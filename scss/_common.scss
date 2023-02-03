@@ -107,6 +107,10 @@ ul {
 .main-content {
   flex-grow: 1;
   padding: 48px 0 45px;
+
+  &--country {
+    padding-top: 80px;
+  }
 }
 
 /* BUTTON */

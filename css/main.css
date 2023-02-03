@@ -136,6 +136,9 @@ ul {
   flex-grow: 1;
   padding: 48px 0 45px;
 }
+.main-content--country {
+  padding-top: 80px;
+}
 
 /* BUTTON */
 .button {
@@ -337,4 +340,14 @@ ul {
 .country-card__link {
   position: absolute;
   inset: 0;
+}
+
+.back-button__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+  gap: 10px;
+  padding: 11px 39px 11px 32px;
+  background-color: var(--element-bg);
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
