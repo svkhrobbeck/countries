@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countries</title>
+    <title>Country</title>
 
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="images/"> -->
@@ -53,67 +53,12 @@
     <!-- MAIN CONTENT -->
     <main class="main-content">
       <div class="container">
-        <!-- SEARCH -->
-        <section class="search-filter">
-          <form class="search-filter__form">
-            <input
-              class="search-filter__form-input"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              required
-            />
-            <select class="search-filter__form-select" data-filter-select>
-              <option selected disabled>Filter by Region</option>
-              <option value="africa">Africa</option>
-              <option value="america">America</option>
-              <option value="asia">Asia</option>
-              <option value="europe">Europe</option>
-              <option value="oceania">Oceania</option>
-            </select>
-          </form>
-        </section>
-        <!-- /SEARCH -->
-
-        <!-- COUNTRIES -->
-        <section class="countries" data-countries-wrapper></section>
-        <!-- /COUNTRIES -->
       </div>
     </main>
     <!-- /MAIN CONTENT -->
 
     <!-- FOOTER -->
     <!-- /FOOTER -->
-
-    <!-- TEMPLATE -->
-    <template data-country-template>
-      <!-- COUNTRIES CARD -->
-      <div class="countries-card">
-        <div class="countires-card__top">
-          <img class="countries-card__img" data-country-img />
-        </div>
-        <div class="countries-card__content">
-          <h2
-            class="countries__title data-country-title"
-            data-country-title
-          ></h2>
-          <p class="countries-card__population">
-            Population:
-            <span data-country-population-text></span>
-          </p>
-          <p class="countries-card__region">
-            Region:
-            <span data-country-region-text></span>
-          </p>
-          <p class="countries-card__capital">
-            Capital:
-            <span data-country-capital-text></span>
-          </p>
-          <a class="country-card__link" href="" data-country-link></a>
-        </div>
-      </div>
-    </template>
-    <!-- /TEMPLATE -->
 
     <!-- LOADER -->
     <div class="loader hidden" data-loader>

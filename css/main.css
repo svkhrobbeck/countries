@@ -282,6 +282,7 @@ ul {
 
 .countries-card {
   background-color: var(--element-bg);
+  position: relative;
   max-width: 264px;
   width: 100%;
   border-radius: 5px;
@@ -331,4 +332,9 @@ ul {
 .countries-card__region span,
 .countries-card__capital span {
   font-weight: 300;
+}
+
+.country-card__link {
+  position: absolute;
+  inset: 0;
 }/*# sourceMappingURL=main.css.map */
