@@ -18,6 +18,7 @@
   font-size: 24px;
   line-height: normal;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 /* MODE */
@@ -33,6 +34,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
 }
 
 .mode__btn-icon {
