@@ -282,6 +282,12 @@ ul {
   gap: 30px;
   row-gap: 67px;
 }
+@media only screen and (max-width: 992px) {
+  .countries {
+    justify-content: center;
+    gap: 40px;
+  }
+}
 
 .countries-card {
   background-color: var(--element-bg);
@@ -290,6 +296,7 @@ ul {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .countries-card__img {
@@ -316,9 +323,14 @@ ul {
   text-overflow: ellipsis;
 }
 
-.countries-card__population,
-.countries-card__region,
-.countries-card__capital {
+.name,
+.population,
+.region,
+.capital,
+.domain,
+.currencies,
+.subregion,
+.languages {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
@@ -326,14 +338,24 @@ ul {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.countries-card__population:not(:last-child),
-.countries-card__region:not(:last-child),
-.countries-card__capital:not(:last-child) {
+.name:not(:last-child),
+.population:not(:last-child),
+.region:not(:last-child),
+.capital:not(:last-child),
+.domain:not(:last-child),
+.currencies:not(:last-child),
+.subregion:not(:last-child),
+.languages:not(:last-child) {
   margin-bottom: 8px;
 }
-.countries-card__population span,
-.countries-card__region span,
-.countries-card__capital span {
+.name span,
+.population span,
+.region span,
+.capital span,
+.domain span,
+.currencies span,
+.subregion span,
+.languages span {
   font-weight: 300;
 }
 
@@ -350,4 +372,49 @@ ul {
   padding: 11px 39px 11px 32px;
   background-color: var(--element-bg);
   border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+/* COUNTRY INFO */
+.country-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.country-info__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 23px;
+}
+
+.country-info__list {
+  display: flex;
+  align-items: flex-start;
+  gap: 140px;
+  margin-bottom: 68px;
+}
+
+.country-info__border-countries {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-info__border-countries-link {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 14px;
+  padding: 5px 28px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--element-bg);
 }/*# sourceMappingURL=main.css.map */

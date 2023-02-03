@@ -53,6 +53,7 @@
     <!-- MAIN CONTENT -->
     <main class="main-content main-content--country">
       <div class="container">
+        <!-- BACK BUTTON -->
         <div class="back-button">
           <a class="back-button__link" href="index.html">
             <svg
@@ -75,12 +76,80 @@
             <span>Back</span>
           </a>
         </div>
+        <!-- COUNTRY INFO -->
+        <section class="country-info" data-country-info></section>
+        <!-- /COUNTRY INFO -->
       </div>
     </main>
     <!-- /MAIN CONTENT -->
 
     <!-- FOOTER -->
     <!-- /FOOTER -->
+
+    <!-- TEMPLATE -->
+    <template data-country-info-template>
+      <div class="country-info__inner">
+        <div class="country-info__image">
+          <img
+            class="country-info__img"
+            width="560"
+            height="400"
+            src=""
+            alt=""
+          />
+        </div>
+        <div class="country-info__content">
+          <h2 class="country-info__title">Germany</h2>
+          <ul class="country-info__list">
+            <li class="country-info__item">
+              <p class="name">
+                Native name:
+                <span data-country-name-text>België</span>
+              </p>
+              <p class="population">
+                Population:
+                <span data-country-population-text>11,319,511</span>
+              </p>
+              <p class="region">
+                Region:
+                <span data-country-region-text>Europe</span>
+              </p>
+              <p class="subregion">
+                Sub Region:
+                <span data-country-capital-text>Western Europe</span>
+              </p>
+              <p class="capital">
+                Capital:
+                <span data-country-capital-text>Brussels</span>
+              </p>
+            </li>
+            <li class="country-info__item">
+              <p class="domain">
+                Top Level Domain:
+                <span data-country-population-text>.be</span>
+              </p>
+              <p class="currencies">
+                Currencies:
+                <span data-country-region-text>Euro</span>
+              </p>
+              <p class="languages">
+                Languages:
+                <span data-country-capital-text>Dutch, French, German</span>
+              </p>
+            </li>
+          </ul>
+          <p class="country-info__border-countries">
+            Border Countries:
+            <a class="country-info__border-countries-link" href="">France</a
+            ><a class="country-info__border-countries-link" href="">Germany</a
+            ><a class="country-info__border-countries-link" href=""
+              >Netherlands</a
+            >
+          </p>
+        </div>
+      </div>
+    </template>
+    <!-- /TEMPLATE -->
 
     <!-- LOADER -->
     <div class="loader hidden" data-loader>
@@ -89,6 +158,7 @@
 
     <!-- SCRIPTS -->
     <script src="js/main.js"></script>
+    <script src="js/country.js"></script>
     <script src="js/mode.js"></script>
   </body>
 </html>

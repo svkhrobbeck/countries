@@ -6,6 +6,11 @@
   flex-wrap: wrap;
   gap: 30px;
   row-gap: 67px;
+
+  @media only screen and (max-width: $tablet-l) {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .countries-card {
@@ -15,6 +20,7 @@
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .countries-card__img {
@@ -39,9 +45,14 @@
   text-overflow: ellipsis;
 }
 
-.countries-card__population,
-.countries-card__region,
-.countries-card__capital {
+.name,
+.population,
+.region,
+.capital,
+.domain,
+.currencies,
+.subregion,
+.languages {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
