@@ -26,6 +26,7 @@ function renderCountryInfo(countries) {
     const elCountryInfoCardImg = elCountryInfoCard.querySelector("[data-country-info-img]")
     const elBorderCountries = elCountryInfoCard.querySelector("[data-border-countries]")
 
+    document.title = country.name.common
     elCountryInfoCardImg.src = country.flags.png
     elCountryInfoCardImg.alt = country.name.common
     elCountryInfoCard.querySelector("[data-country-info-title]").textContent = country.name.common
