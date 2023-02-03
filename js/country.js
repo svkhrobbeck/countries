@@ -39,13 +39,6 @@ function renderCountryInfo(countries) {
     // elCountryInfoCard.querySelector("[data-country-info-currencies-text]").textContent = country.currencies
     // elCountryInfoCard.querySelector("[data-country-info-languages-text]").textContent = country.languages
 
-    // (country.borders).forEach(border => {
-    //   html += `<a class="country-info__border-countries-link" href="${}"
-    //   >Netherlands</a
-    // >`
-    // })
-    console.log(country);
-
     elCountryInfoWrapper.appendChild(elCountryInfoCard)
   });
 

@@ -19,7 +19,7 @@
     <header class="site-header">
       <div class="container site-header__container">
         <div class="logo site-header__logo">
-          <a class="logo__link" href="/"> Where in the world? </a>
+          <a class="logo__link" href="index.html"> Where in the world? </a>
         </div>
         <div class="mode">
           <button class="mode__btn" data-mode-toggler>
@@ -83,9 +83,6 @@
     </main>
     <!-- /MAIN CONTENT -->
 
-    <!-- FOOTER -->
-    <!-- /FOOTER -->
-
     <!-- TEMPLATE -->
     <template data-country-info-template>
       <div class="country-info__inner">
@@ -129,17 +126,25 @@
               </p>
               <p class="currencies">
                 Currencies:
-                <span data-country-info-currencies-text>Euro</span>
+                <span data-country-info-currencies-text></span>
               </p>
               <p class="languages">
                 Languages:
-                <span data-country-info-languages-text>Dutch, French, German</span>
+                <span data-country-info-languages-text></span>
               </p>
             </li>
           </ul>
           <p class="country-info__border-countries">
             Border Countries:
-            <span data-border-countries></span>
+            <span class="country-info__border-countries-link-wrapper" data-border-countries>
+              <a href="" class="country-info__border-countries-link">
+                Germany </a
+              ><a href="" class="country-info__border-countries-link">
+                Germany </a
+              ><a href="" class="country-info__border-countries-link">
+                Germany
+              </a>
+            </span>
           </p>
         </div>
       </div>
