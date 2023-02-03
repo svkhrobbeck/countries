@@ -234,6 +234,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   gap: 40px;
 }
 @media only screen and (max-width: 768px) {
@@ -243,9 +244,18 @@ ul {
   }
 }
 
+.search-filter__form-label {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 30px;
+  transform: translateY(-35%);
+}
+
 .search-filter__form-input {
   background-color: var(--element-bg);
   border: none;
+  position: relative;
   padding: 18px 18px 18px 74px;
   min-width: 480px;
   font-size: 14px;
@@ -281,7 +291,7 @@ ul {
   color: var(--text-color);
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   row-gap: 67px;
 }
 @media only screen and (max-width: 992px) {
