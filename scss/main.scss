@@ -2,8 +2,11 @@
 @import "./fonts";
 @import "./common";
 @import "./container";
+@import "./button";
+@import "./loader";
 
 // BLOCKS
 @import "./blocks/header";
-@import "./blocks/hero";
+@import "./blocks/search";
+@import "./blocks/countries";
 @import "./blocks/footer";

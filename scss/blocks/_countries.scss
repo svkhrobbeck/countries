@@ -1,0 +1,61 @@
+/* COUNTRIES */
+.countries {
+  display: flex;
+  color: var(--text-color);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 67px;
+}
+
+.countries-card {
+  background-color: var(--element-bg);
+  max-width: 264px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.countires-card__top {
+}
+
+.countries-card__img {
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.countries-card__content {
+  padding: 24px 24px 46px;
+}
+
+.countries__title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.countries-card__population,
+.countries-card__region,
+.countries-card__capital {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  span {
+    font-weight: 300;
+  }
+}

@@ -1,7 +1,9 @@
 /* CUSTOM PROPS */
 :root {
-  --primary-bg-color: #fff;
-  --text-color: #000;
+  --primary-bg-color: #fafafa;
+  --text-color: #111517;
+  // --mode-color: #fff;
+  --element-bg: #fff;
 }
 
 /* GLOBAL */
@@ -15,7 +17,7 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-decoration: none;
+  transition: background-color 0.5s ease;
 }
 
 *,
@@ -29,21 +31,37 @@ html {
   outline-offset: 3px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   height: 100%;
-  font-family: "Nunito Sans","Arial", sans-serif;
+  font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+/* DARK MODE */
+.dark-mode {
+  --primary-bg-color: #202c36;
+  --text-color: #fff;
+  --element-bg: #2b3844;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* SCROLL BAR */
@@ -88,6 +106,7 @@ body {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  padding: 48px 0 45px;
 }
 
 /* BUTTON */
@@ -101,8 +120,9 @@ body {
 
 /* RETINA BGS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {}
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+}
