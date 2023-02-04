@@ -440,10 +440,24 @@ ul {
   }
 }
 
+.country-info__img {
+  max-width: 560px;
+}
+@media only screen and (max-width: 576px) {
+  .country-info__img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+.country-info__content {
+  max-width: 574px;
+  width: 100%;
+}
 @media only screen and (max-width: 992px) {
   .country-info__content {
     max-width: 560px;
-    width: 100%;
   }
 }
 
