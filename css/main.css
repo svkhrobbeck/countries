@@ -254,13 +254,22 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   gap: 40px;
 }
 @media only screen and (max-width: 768px) {
   .search-filter__form {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+.search-filter__fields {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .search-filter__fields {
+    display: block;
+    min-width: 100%;
   }
 }
 
@@ -275,7 +284,6 @@ ul {
 .search-filter__form-input {
   background-color: var(--element-bg);
   border: none;
-  position: relative;
   padding: 18px 18px 18px 74px;
   min-width: 480px;
   font-size: 14px;
@@ -287,8 +295,8 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .search-filter__form-input {
-    min-width: 250px;
-    width: 100%;
+    display: block;
+    min-width: 100%;
   }
 }
 
@@ -395,6 +403,18 @@ ul {
 .country-card__link {
   position: absolute;
   inset: 0;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--element-bg);
+  padding: 20px 0;
+}
+
+.site-footer__link {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .back-button__link {

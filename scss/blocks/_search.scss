@@ -7,12 +7,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   gap: 40px;
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+.search-filter__fields {
+  position: relative;
+
+  @media only screen and (max-width: $tablet) {
+    display: block;
+    min-width: 100%;
   }
 }
 
@@ -27,7 +35,6 @@
 .search-filter__form-input {
   background-color: var(--element-bg);
   border: none;
-  position: relative;
   padding: 18px 18px 18px 74px;
   min-width: 480px;
   font-size: 14px;
@@ -38,8 +45,8 @@
   color: var(--text-color);
 
   @media only screen and (max-width: $tablet) {
-    min-width: 250px;
-    width: 100%;
+    display: block;
+    min-width: 100%;
   }
 }
 

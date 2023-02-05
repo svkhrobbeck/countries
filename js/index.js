@@ -17,6 +17,8 @@ getData()
 function renderCountries(countries) {
   elCountriesWrapper.innerHTML = ""
   countries.forEach(country => {
+    const population = country.population
+
     const elCountryCard = elCountryTemplate.content.cloneNode(true)
     const elCountryCardImg = elCountryCard.querySelector("[data-country-img]")
 
@@ -25,7 +27,7 @@ function renderCountries(countries) {
     elCountryCardImg.width = 264
     elCountryCardImg.height = 160
     elCountryCard.querySelector("[data-country-title]").textContent = country.name.common
-    elCountryCard.querySelector("[data-country-population-text]").textContent = country.population
+    elCountryCard.querySelector("[data-country-population-text]").textContent = population.toLocaleString("uz")
     elCountryCard.querySelector("[data-country-region-text]").textContent = country.region
     elCountryCard.querySelector("[data-country-capital-text]").textContent = country.capital
     elCountryCard.querySelector("[data-country-link]").href = `country.html?country=${country.name.common}`
