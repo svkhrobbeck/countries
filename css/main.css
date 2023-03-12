@@ -149,6 +149,12 @@ ul {
   text-decoration: none;
 }
 
+.alert-text {
+  margin-top: 100px;
+  font-size: 34px;
+  text-align: center;
+}
+
 /* RETINA BGS */
 /* CONTAINER */
 .container {
@@ -317,9 +323,9 @@ ul {
 .countries {
   display: flex;
   color: var(--text-color);
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   row-gap: 67px;
 }
 @media only screen and (max-width: 992px) {

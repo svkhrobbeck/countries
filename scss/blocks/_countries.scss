@@ -2,9 +2,9 @@
 .countries {
   display: flex;
   color: var(--text-color);
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   row-gap: 67px;
 
   @media only screen and (max-width: $tablet-l) {
