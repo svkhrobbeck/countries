@@ -21,7 +21,9 @@ function countrySearch(countries) {
   let filteredCountries;
   elSearchForm.search.addEventListener("input", () => {
     filteredCountries = countries.filter((item) =>
-      item.name.common.toLowerCase().includes(elSearchForm.search.value)
+      item.name.common
+        .toLowerCase()
+        .includes(elSearchForm.search.value.toLowerCase())
     );
     renderCountries(filteredCountries);
   });
