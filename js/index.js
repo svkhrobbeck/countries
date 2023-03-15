@@ -68,7 +68,7 @@ function renderCountries(countries) {
       country.capital;
     elCountryCard.querySelector(
       "[data-country-link]"
-    ).href = `country.html?country=${country.name.common}`;
+    ).href = `country.html?country=/name/${country.name.common}`;
 
     elCountriesWrapper.appendChild(elCountryCard);
   });
