@@ -41,6 +41,7 @@ function countryFilter(countries) {
           item.region.toLowerCase() === elSearchForm.filter.value.toLowerCase()
       );
     }
+    countrySearch(sortedCountries);
     renderCountries(sortedCountries);
   });
 }
@@ -74,7 +75,7 @@ function renderCountries(countries) {
   });
 
   if (countries.length === 0) {
-    const el = `<p class="alert-text">Countries Not Found!</p>`;
+    const el = `<p class="alert-text">Country Not Found!</p>`;
 
     elCountriesWrapper.innerHTML = el;
   } else return;
