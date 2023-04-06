@@ -22,6 +22,10 @@
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+
+  @media only screen and (max-width: 610px) {
+    max-width: none;
+  }
 }
 
 .countries-card__img {
@@ -30,6 +34,10 @@
   height: 160px;
   object-fit: cover;
   object-position: center;
+
+  @media only screen and (max-width: 610px) {
+    height: 240px;
+  }
 }
 
 .countries-card__content {

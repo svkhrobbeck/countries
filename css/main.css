@@ -345,6 +345,11 @@ ul {
   overflow: hidden;
   cursor: pointer;
 }
+@media only screen and (max-width: 610px) {
+  .countries-card {
+    max-width: none;
+  }
+}
 
 .countries-card__img {
   max-width: 100%;
@@ -354,6 +359,11 @@ ul {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media only screen and (max-width: 610px) {
+  .countries-card__img {
+    height: 240px;
+  }
 }
 
 .countries-card__content {
