@@ -18,12 +18,11 @@ getData();
 
 // Search
 function countrySearch(countries) {
-  let filteredCountries;
   elSearchForm.search.addEventListener("input", () => {
-    filteredCountries = countries.filter((item) =>
+    let filteredCountries = countries.filter((item) =>
       item.name.common
         .toLowerCase()
-        .includes(elSearchForm.search.value.toLowerCase())
+        .includes(elSearchForm.country.value.toLowerCase())
     );
     renderCountries(filteredCountries);
   });
