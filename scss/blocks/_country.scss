@@ -37,7 +37,6 @@
   @media only screen and (max-width: $mobile) {
     align-items: flex-start;
   }
-  
 }
 
 .country-info__img {
@@ -56,9 +55,9 @@
 .country-info__content {
   max-width: 574px;
   width: 100%;
-  
+
   @media only screen and (max-width: $tablet-l) {
-   max-width: 560px;
+    max-width: 560px;
   }
 }
 
@@ -116,10 +115,10 @@
   background-color: var(--element-bg);
 
   @media only screen and (max-width: $tablet) {
-   padding: 4px 24px;
+    padding: 4px 24px;
   }
 
   @media only screen and (max-width: $mobile) {
-   padding: 3px 20px;
+    padding: 3px 20px;
   }
 }

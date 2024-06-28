@@ -2,7 +2,9 @@ const BASE_COUNTRY_API = "https://restcountries.com/v3.1/";
 
 const elCountryInfoWrapper = document.querySelector("[data-country-info]");
 const elCountryInfoTemplate = document.querySelector("[data-country-info-template]");
-const CountryName = new URLSearchParams(window.location.search).get("country");
+
+const params = new URLSearchParams(location.search);
+const CountryName = params.get("country");
 
 const getCountryData = async name => {
   loader(true);
